@@ -2,16 +2,16 @@
 #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: Home
+  - name: Início
     url: /
     weight: 10
-  - name: Documentation
+  - name: Recursos
     url: docs/
     weight: 20
   - name: Blog
     url: blog/
     weight: 30
-  - name: Contribute
+  - name: Contribua
     url: community/
     weight: 50
 

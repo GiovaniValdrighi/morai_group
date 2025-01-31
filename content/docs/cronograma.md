@@ -6,4 +6,4 @@ weight: 2
 
 | Data | Título |
 | ---- | ---- |
-| 31/01/2025 | Introdução a probabilidade |
+| 31/01/2025 | Prova por indução, Introdução a probabilidade |

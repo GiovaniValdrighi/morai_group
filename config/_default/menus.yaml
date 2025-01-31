@@ -11,7 +11,7 @@ main:
   - name: Blog
     url: blog/
     weight: 30
-  - name: Community
+  - name: Contribute
     url: community/
     weight: 50
 

@@ -13,4 +13,5 @@ This site is a demo of the Hugo Blox Documentation theme. For the full documenta
 
 {{< cards >}}
   {{< card url="getting-started" title="Get Started" icon="document-text" subtitle="Create your docs in just 5 minutes!" >}}
+  {{< card url="cronograma" title="Cronograma" icon="document-text" subtitle="Cronograma de apresentações" >}}
 {{< /cards >}}

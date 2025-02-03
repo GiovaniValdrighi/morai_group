@@ -1,14 +1,25 @@
 ---
-title: Contribute
+title: Contribua
 toc: true
-reading_time: false
+reading_time: true
 pager: false
 ---
 
-## HugoBlox tutorials
+## Documentação HugoBlox
 
-- View the [Hugo Blox Documentation](https://docs.hugoblox.com/)
+Essa página foi criada a partir do HugoBlox, uma plataforma open-source para a criação de páginas web sem código. Todo o conteúdo do site é baseado em markdown, sem a necessidade de programar linguagens html, javascript e css para modificar o site.
 
-## Feature requests {#feature-requests}
+Para uma visão completa do que pode ser feito com a página, recomendo a [documentação oficial](https://docs.hugoblox.com/).
 
-For new feature requests, create a post on our [GitHub Issues](https://github.com/HugoBlox/hugo-blox-builder/issues). You can also upvote existing feature requests with a 👍
+
+## Como adicionar conteúdo
+
+### Adicionar uma nova página
+
+### Criar uma nova seção
+
+### Reportar um erro
+
+Recomendo a utilização de _Github Issues_ para reportar algum erro presente nos conteúdos.
+
+

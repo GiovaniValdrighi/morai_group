@@ -8,9 +8,6 @@ main:
   - name: Recursos
     url: recursos/
     weight: 20
-  - name: Blog
-    url: blog/
-    weight: 30
   - name: Contribua
     url: contribua/
-    weight: 50
+    weight: 30

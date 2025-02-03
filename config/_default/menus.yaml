@@ -12,5 +12,5 @@ main:
     url: blog/
     weight: 30
   - name: Contribua
-    url: community/
+    url: contribua/
     weight: 50

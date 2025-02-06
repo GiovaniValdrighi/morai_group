@@ -60,7 +60,7 @@ Texto de introdução do conteúdo.
 
 
 
-### Reportar um erro
+## Reportar um erro
 
 Recomendo a utilização de _Github Issues_ para reportar algum erro presente nos conteúdos.
 

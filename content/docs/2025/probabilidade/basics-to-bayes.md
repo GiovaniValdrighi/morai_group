@@ -3,8 +3,339 @@ title: Basics to Bayes
 weight: 1
 ---
 
-## teste
+> Tudo aqui foi transformado para Markdown usando LLM. Podem existir erros.
 
-## teste 2
+# Introdução
 
-### teste 3
+## Espaços Amostrais e Eventos
+
+O espaço amostral $\Omega$ é o conjunto de possíveis resultados de um experimento. Os pontos $\omega$ em $\Omega$ são chamados de resultados amostrais, realizações ou elementos. Subconjuntos de $\Omega$ são chamados de eventos. 
+
+
+## Exemplo 1.3
+
+Se lançarmos uma moeda para sempre, então o espaço amostral é o conjunto infinito:
+
+$$
+\Omega = \left\{ \omega = (\omega_1, \omega_2, \omega_3, \dots) : \omega_i \in \{H, T\} \right\}.
+$$
+
+Seja $E$ o evento em que a primeira face "cara" ($H$) aparece no terceiro lançamento. Então:
+
+$$
+E = \left\{ (\omega_1, \omega_2, \omega_3, \dots) : \omega_1 = T, \omega_2 = T, \omega_3 = H, \, \omega_i \in \{H, T\} \text{ para } i > 3 \right\}.
+$$
+
+
+## Exemplo prático 1
+
+Suponha que lancemos uma moeda justa até obtermos exatamente duas caras. Descreva o espaço amostral $S$.
+
+
+## Conjuntos disjuntos
+
+Dizemos que $A_1, A_2, \dots $ são disjuntos ou mutuamente exclusivos se  
+
+$$
+A_i \cap A_j = \emptyset \quad \text{sempre que } i \neq j.
+$$
+
+Por exemplo, os conjuntos  
+
+$
+A_1 = [0,1), \quad A_2 = [1,2), \quad A_3 = [2,3), \dots
+$ 
+
+são disjuntos.
+
+Uma partição de $\Omega$ é uma sequência de conjuntos disjuntos $A_1, A_2, \dots $ tal que  
+
+$$
+\bigcup_{i=1}^{\infty} A_i = \Omega.
+$$
+
+
+## Sequências Monótonas de Conjuntos
+
+[Image of $ A_1 \subset A_2 \subset A_3 \subset \dots \subset A_n  $]
+
+
+## Sequências Monótonas de Conjuntos
+
+Uma sequência de conjuntos $A_1, A_2, \dots $ é **monotonamente crescente** se $A_1 \subset A_2 \subset A_3 \subset \dots$ e definimos 
+
+$$
+\lim_{n \to \infty} A_n = \bigcup_{i=1}^{\infty} A_i.
+$$
+
+Uma sequência de conjuntos $A_1, A_2, \dots $ é **monotonamente decrescente** se 
+$A_1 \supset A_2 \supset A_3 \supset \dots$
+e definimos 
+
+$$
+\lim_{n \to \infty} A_n = \bigcap_{i=1}^{\infty} A_i.
+$$
+
+Em ambos os casos, escrevemos $A_n \to A$.
+
+
+## Sumário das terminologias básicas
+
+| Símbolo        | Descrição                                     |
+|----------------|-------------------------------------------------|
+| $\Omega$      | espaço amostral (Letra Ômega nessa apresentação) |
+| $\omega$     | resultado (ponto ou elemento)                 |
+| $A$           | evento (subconjunto de $\Omega$)              |
+| $A^c$         | complemento de $A$ (não $A$)                  |
+| $A \cup B$   | união ($A$ ou $B$)                            |
+| $A \cap B$ ou $AB$ | interseção ($A$ e $B$)                      |
+| $A - B$       | diferença de conjuntos ($\omega$ em $A$, mas não em $B$) |
+| $A \subset B$ | inclusão de conjuntos                         |
+| $\emptyset$  | evento nulo (sempre falso)                    |
+| $\Omega$      | evento certo (sempre verdadeiro (?))          |
+
+
+# Probabiblity Definidtion
+
+## Possible Interpretations
+The books bring two different views of how to understand probability.
+- **Frequentist:** The probability of an event is, in a big number of experimentations, the proportion of times that an event is true across the repetition.([link](https://digitalfirst.bfwpub.com/stats_applet/stats_applet_10_prob.html))
+
+## Possible Interpretations
+The books bring two different views of how to understand probability.
+- **Frequentist:** The probability of an event is, in a big number of experimentations, the proportion of times that an event is true across the repetition.([link](https://digitalfirst.bfwpub.com/stats_applet/stats_applet_10_prob.html))
+- **Bayesian:** The belief of an observer in a certain event to be true.
+
+## Definition of Probability
+**Definition.** A function $\mathbb{P}$ that assigns a real number $\mathbb{P}(A)$ to each event $A$ is a **probability distribution** or a **probability measure** if it satisfies the following three axioms:
+
+- **Axiom 1:** $\mathbb{P}(A) \geq 0$ for every $A$
+- **Axiom 2:** $\mathbb{P}(\Omega) = 1$
+- **Axiom 3:** If $A_1, A_2, \dots$ are disjoint then
+    $$
+    \mathbb{P} \left( \bigcup_{i=1}^{\infty} A_i \right) = \sum_{i=1}^{\infty} \mathbb{P}(A_i).
+    $$
+
+## Definition of Probability
+This creates some interesting implications for us to be aware of:
+- $\mathbb{P}(\emptyset) = 0$
+- $A \subset B \implies \mathbb{P}(A) \leq \mathbb{P}(B)$
+- $0 \leq \mathbb{P}(A) \leq 1$
+- $\mathbb{P}(A^c) = 1 - \mathbb{P}(A)$
+- $A \cap B = \emptyset \implies \mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B). \quad $
+
+## Probability - Union of Events
+**Lemma.** *For any events \( A \) and \( B \),*
+
+$$
+\mathbb{P} \left( A \cup B \right) = \mathbb{P}(A) + \mathbb{P}(B) - \mathbb{P}(AB).
+$$
+
+
+*Obs: See proof in pg 6
+
+## Probability - Continuity of Probabilities
+**Theorem (Continuity of Probabilities).**
+If $A_n \to A$ then
+$$
+P(A_n) \to P(A) \quad \text{as } n \to \infty.
+$$
+
+
+## Eventos Independentes
+
+### Independência de Eventos
+**Definição**: Dois eventos \( A \) e \( B \) são independentes se
+$$
+P(A B) = P(A) P(B) = P(A) \cdot P(B)
+$$
+e escrevemos \( A\perp\!\!\!\perp B \) (Lê-se A é independente de B). Um conjunto de eventos \( \{ A_i : i \in I \} \) é independente se
+$$
+P \left( \bigcap_{i \in J} A_i \right) = \prod_{i \in J} P(A_i)
+$$
+para todo subconjunto finito \( J \) de \( I \). Se \( A \) e \( B \) não são independentes, escrevemos \( A \not\perp B \).
+
+### Tipos de Independência de Eventos
+A independência pode surgir de duas formas distintas:
+* Em alguns casos, assumimos explicitamente que dois eventos são independentes (Ex: Achar uma moeda na rua e ganhar na loteria).
+* Em outros casos, derivamos a independência a partir de cálculos ou das propriedades do problema.
+
+### Exemplo de Eventos Independentes
+Vamos considerar o lançamento de um dado justo. Definimos os seguintes eventos:
+* Evento \( A = \{2, 4, 6\} \), ou seja, os resultados em que o dado mostra um número par.
+* Evento \( B = \{1, 2, 3, 4\} \), ou seja, os resultados em que o dado mostra um número menor ou igual a 4.
+
+A interseção de \( A \) e \( B \), ou seja, os resultados que pertencem a ambos os eventos \( A \) e \( B \), é dada por:
+$$
+A \cap B = \{2, 4\}
+$$
+Estes são os números que são simultaneamente pares e menores ou iguais a 4.
+
+### Probabilidade de \( A \cap B \)
+A probabilidade de \( A \cap B \) é dada pelo número de resultados favoráveis (que são 2: \( 2 \) e \( 4 \)) dividido pelo número total de resultados possíveis (6, pois o dado tem 6 faces):
+$$
+P(A \cap B) = \frac{2}{6} = \frac{1}{3}
+$$
+
+### Probabilidades Individuais
+Agora, calculamos as probabilidades individuais:
+* A probabilidade de \( A \) (resultados pares) é:
+$$
+P(A) = \frac{3}{6} = \frac{1}{2}
+$$
+* A probabilidade de \( B \) (resultados menores ou iguais a 4) é:
+$$
+P(B) = \frac{4}{6} = \frac{2}{3}
+$$
+
+### Verificando a Independência
+Para que \( A \) e \( B \) sejam independentes, a probabilidade da interseção deve ser igual ao produto das probabilidades individuais:
+$$
+P(A \cap B) = P(A) \times P(B)
+$$
+Verificamos:
+$$
+P(A \cap B) = \frac{1}{3}, \quad P(A) \times P(B) = \frac{1}{2} \times \frac{2}{3} = \frac{1}{3}
+$$
+Como \( P(A \cap B) = P(A) \times P(B) \), concluímos que os eventos \( A \) e \( B \) são independentes.
+
+### Conclusão
+``Neste caso, não assumimos que \( A \) e \( B \) são independentes — apenas descobrimos que eram'' significa que, ao calcular as probabilidades e verificar a condição de independência, chegamos à conclusão de que \( A \) e \( B \) são eventos independentes, sem fazer essa suposição previamente.
+
+### Eventos Disjuntos e Independência
+Suponha que \( A \) e \( B \) sejam eventos disjuntos, cada um com probabilidade positiva.
+Podemos nos perguntar: eles podem ser independentes?
+
+### Independência de Eventos Disjuntos
+A resposta é não. Isso ocorre porque a probabilidade da interseção de \( A \) e \( B \) é zero:
+$$
+P(A \cap B) = P(\emptyset) = 0
+$$
+No entanto, a probabilidade de \( A \) e \( B \) é positiva:
+$$
+P(A) > 0 \quad \text{e} \quad P(B) > 0
+$$
+Se fossem independentes, deveríamos ter:
+$$
+P(A \cap B) = P(A) P(B)
+$$
+Mas, como \( P(A \cap B) = 0 \), isso não pode ser verdade.
+
+### Independência em Diagrama de Venn
+Exceto neste caso especial, não é possível julgar a independência de dois eventos apenas olhando seus conjuntos em um diagrama de Venn.
+
+Um diagrama de Venn é uma representação gráfica dos conjuntos e suas relações, como interseções e uniões. No entanto, em termos de independência, não podemos sempre julgar se dois eventos são independentes apenas olhando para um diagrama de Venn.
+
+### Por que não podemos julgar independência apenas com o Diagrama de Venn?
+A independência entre dois eventos \( A \) e \( B \) é uma propriedade que envolve as probabilidades dos eventos e não apenas as suas relações gráficas. Especificamente, para dois eventos serem independentes, deve se cumprir a seguinte condição:
+$$
+P(A \cap B) = P(A)P(B)
+$$
+No entanto, em um diagrama de Venn, apenas a visualização das interseções entre os conjuntos \( A \) e \( B \) não fornece informações sobre as probabilidades associadas a esses eventos, o que é crucial para verificar a independência.
+
+### Resumo sobre Independência
+* \( A \) e \( B \) são independentes se e somente se \( P(A \cap B) = P(A)P(B) \).
+* A independência é, às vezes, assumida e, outras vezes, derivada.
+* Eventos disjuntos com probabilidade positiva não são independentes.
+
+
+
+
+
+## Probabilidade Condicional
+Se $P(B) > 0$, então a probabilidade condicional de $A$ dado $B$ é:
+$$P(A|B) = \frac{P(A \cap B)}{P(B)}$$
+
+Pense em $P(A|B)$ como a fração de vezes em que $A$ ocorre entre aquelas em que $B$ ocorre.
+
+## Propriedades da Probabilidade Condicional
+Para qualquer $B$ fixo tal que $P(B) > 0$, $P(\cdot | B)$ é uma probabilidade, ou seja, ela satisfaz os três axiomas da probabilidade.
+
+## Álgebra $\sigma$ e Espaço de Probabilidade
+Geralmente, não é viável atribuir probabilidades a todos os subconjuntos de um espaço amostral $\Omega$. Em vez disso, restringe-se a atenção a um conjunto de eventos chamado álgebra $\sigma$ ou $\sigma$-álgebra, que é uma classe $A$ que satisfaz as seguintes propriedades:
+
+* $\emptyset \in A$, ou seja, o conjunto vazio está em $A$.
+* Se $A_1, A_2, \dots \in A$, então $\bigcup_{i=1}^{\infty} A_i \in A$, ou seja, a união contável de eventos em $A$ também está em $A$.
+* Se $A \in A$, então $A^c \in A$, ou seja, se $A$ está em $A$, então o complemento de $A$ também está em $A$.
+
+Os conjuntos em $A$ são chamados de conjuntos mensuráveis.
+
+Chamamos o par $(\Omega, A)$ de espaço mensurável. Se $P$ for uma medida de probabilidade definida sobre $A$, então o triplo $(\Omega, A, P)$ é chamado de espaço de probabilidade.
+
+## Axiomas da Probabilidade Condicional
+Em particular, temos as seguintes propriedades:
+* $P(A|B) \geq 0$, ou seja, a probabilidade condicional é sempre não negativa.
+* $P(\Omega|B) = 1$, ou seja, a probabilidade condicional do espaço amostral $\Omega$, dado $B$, é 1.
+* Se $A_1, A_2, \dots$ são eventos disjuntos, então:
+$$P\left( \bigcup_{i=1}^{\infty} A_i \Big| B \right) = \sum_{i=1}^{\infty} P(A_i | B).$$
+
+## Limitações da Probabilidade Condicional
+No entanto, em geral, não é verdade que:
+$$P(A|B \cup C) = P(A|B) + P(A|C).$$
+As regras da probabilidade aplicam-se apenas aos eventos à esquerda da barra $|$.
+$$P(A|B) \neq P(B|A)$$
+
+## Exemplo de Probabilidade Condicional
+Um teste médico para a doença $D$ tem os resultados $+$ e $-$. As probabilidades são as seguintes:
+
+|   | D     | D^c   |
+|---|-------|-------|
+| + | 0.009 | 0.099 |
+| - | 0.001 | 0.891 |
+
+## Cálculo de Probabilidades Condicionais
+Da definição de probabilidade condicional, temos:
+$$P(+|D) = \frac{P(+ \cap D)}{P(D)} = \frac{0.009}{0.009 + 0.001} = 0.9$$
+e
+$$P(-|D^c) = \frac{P(- \cap D^c)}{P(D^c)} = \frac{0.891}{0.891 + 0.099} \approx 0.9.$$
+Aparentemente, o teste é bastante preciso: pessoas doentes resultam positivo 90\% das vezes e pessoas saudáveis resultam negativo cerca de 90\% das vezes.
+
+## Probabilidade de Ter a Doença    Após um Resultado Positivo
+Suponha que você faça o teste e o resultado seja positivo. Qual é a probabilidade de você ter a doença?
+
+## Probabilidade de Ter a Doença Após um Resultado Positivo
+A maioria das pessoas responderia 0.90. No entanto, a resposta correta é:
+$$P(D|+) = \frac{P(+ \cap D)}{P(+)} = \frac{0.009}{0.009 + 0.099} \approx 0.08.$$
+A lição aqui é que é necessário calcular a resposta numericamente. Não confie apenas na sua intuição.
+
+# Baye's Theorem
+
+## The Law of Total Probability
+### The Law of Total Probability
+
+**Theorem (The Law of Total Probability).**
+Let $A_1, \dots, A_k$ be a partition of $\Omega$.
+Then, for any event $B$,
+$$
+P(B) = \sum_{i=1}^k P(B|A_i)P(A_i).
+$$
+*Obs: See proof in pg 12
+
+## Baye's Theorem
+### Baye's Theorem
+
+**Theorem (Bayes' Theorem).**
+Let $A\_1, \dots, A\_k$ be a partition of $\Omega$ such that $P(A\_i) > 0$ for each $i$
+If $P(B) > 0$ then, for each$i = 1, \dots, k$,
+$$
+P(A_i|B) = \frac{P(B|A_i)P(A_i)}{\sum_j P(B|A_j)P(A_j)}.
+$$
+
+Let's make the deduction using the Conditional Probability and the Law of Total Probability
+
+## Example
+### Example
+Steve is very shy and withdrawn, invariably helpful but with very little interest in people or in the world of reality. A meek and tidy soul, he has a need for order and structure, and a passion for detail.  
+**What is the likelihood of Steve being a librarian vs a farmer?**
+
+*Obs: See more examples in page 12, credit in this one for 3blue1brown
+
+## Exercise
+### Exercise
+Suppose that 30 percent of computer owners use a Macintosh, 50 percent
+use Windows, and 20 percent use Linux. Suppose that 65 percent of
+the Mac users have succumbed to a computer virus, 82 percent of the
+Windows users get the virus, and 50 percent of the Linux users get
+the virus. We select a person at random and learn that her system was
+infected with the virus. **What is the probability that she is a Windows user?**
+*Obs: Ex 19, pg 16

@@ -1,5 +1,5 @@
 ---
-title: 'Home'
+title: 'Início'
 date: 2023-10-24
 type: landing
 
@@ -18,7 +18,7 @@ sections:
         icon: rocket-launch
       secondary_action:
         text: Recursos
-        url: /docs/
+        url: https://giovanivaldrighi.github.io/morai_group/docs/
     design:
       spacing:
         padding: [0, 0, 0, 0]

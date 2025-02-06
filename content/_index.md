@@ -40,25 +40,25 @@ sections:
   - block: features
     id: features
     content:
-      title: Features
-      text: Collaborate, publish, and maintain technical knowledge with an all-in-one documentation site. Used by 100,000+ startups, enterprises, and researchers.
+      title: Tópicos
+      text: Tópicos de pesquisa e desenvolvimento.
       items:
-        - name: Optimized SEO
+        - name: Otimização
           icon: magnifying-glass
-          description: Automatic sitemaps, RSS feeds, and rich metadata take the pain out of SEO and syndication.
-        - name: Fast
+          description: Otimização para redes neurais, otimização multi-objetivo.
+        - name: Aprendizado Profundo
           icon: bolt
-          description: Super fast page load with Tailwind CSS and super fast site building with Hugo.
-        - name: Easy
+          description: Arquiteturas, funções objetivo, regularização.
+        - name: Explicabilidade
           icon: sparkles
-          description: One-click deployment to GitHub Pages. Have your new website live within 5 minutes!
-        - name: No-Code
+          description: Interpretação de redes profundas, explicações contrafactuais.
+        - name: Fairness
           icon: code-bracket
-          description: Edit and design your site just using rich text (Markdown) and configurable YAML parameters.
-        - name: Highly Rated
+          description: Algoritmos, métricas.
+        - name: Teoria do Aprendizado
           icon: star
-          description: Rated 5-stars by the community.
-        - name: Swappable Blocks
+          description: Generalização, convergência.
+        - name: ...e muito mais.
           icon: rectangle-group
-          description: Build your pages with blocks - no coding required!
+          description: 
 ---

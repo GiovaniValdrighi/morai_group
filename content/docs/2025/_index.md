@@ -1,5 +1,4 @@
 ---
-linkTitle: 2025
 title: 2025
 ---
 

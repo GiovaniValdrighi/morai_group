@@ -1,5 +1,4 @@
 ---
-linkTitle: Probabilidade
 title: Probabilidade
 ---
 

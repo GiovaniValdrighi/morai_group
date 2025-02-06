@@ -1,5 +1,4 @@
 ---
-linkTitle: Recursos
 title: Introdução
 ---
 

@@ -1,5 +1,4 @@
 ---
-linkTitle: Demonstração
 title: Demonstração
 ---
 

@@ -10,7 +10,7 @@ design:
 sections:
   - block: hero
     content:
-      title: MORAI
+      title: 
       text: Grupo de Estudos - Multi Objective Responsible Artificial Intelligence
       primary_action:
         text: Contribua

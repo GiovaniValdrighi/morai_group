@@ -4,7 +4,7 @@
    width="1089"
    height="777"
    id="svg10"
-   sodipodi:docname="geogebra-export.svg"
+   sodipodi:docname="icon.svg"
    inkscape:version="1.4 (1:1.4+202410161351+e7c3feb100)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -137,16 +137,4 @@
      d="m 227.88339,313.91166 c 0,0 116.8756,-118.77987 177.56618,-102.51788 60.69057,16.26199 -94.28349,260.8465 -94.28349,260.8465 0,0 214.15547,-248.01767 224.22261,-183.03887 10.06714,64.9788 -80.5371,234.28976 -80.5371,234.28976"
      id="path10"
      sodipodi:nodetypes="cscsc" />
-  <text
-     xml:space="preserve"
-     style="font-size:165.722px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
-     x="737.62463"
-     y="424.47253"
-     id="text10"
-     transform="scale(0.89022247,1.1233147)"><tspan
-       sodipodi:role="line"
-       id="tspan10"
-       x="737.62463"
-       y="424.47253"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:165.722px;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman, ';fill:#ffffff;fill-opacity:1;stroke-width:0;stroke-dasharray:none">RAI</tspan></text>
 </svg>

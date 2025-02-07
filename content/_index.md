@@ -8,21 +8,33 @@ design:
   spacing: "6rem"
 
 sections:
-  - block: markdown
-    content: |
-      ![MORAI Logo](media/logo.svg){ width=50 height=30 align=left }
-
-      # MORAI
-      **Grupo de Estudos - Multi Objective Responsible Artificial Intelligence**
-
-      [![Contribua](https://img.shields.io/badge/Contribua-%F0%9F%9A%80-blue)](https://giovanivaldrighi.github.io/morai_group/community/)  
-      [![Recursos](https://img.shields.io/badge/Recursos-%E2%9C%94-green)](https://giovanivaldrighi.github.io/morai_group/docs/)
-
+  - block: hero
+    content:
+      title: MORAI
+      text: Grupo de Estudos - Multi Objective Responsible Artificial Intelligence
+      primary_action:
+        text: Contribua
+        url: https://giovanivaldrighi.github.io/morai_group/community/
+        icon: rocket-launch
+      secondary_action:
+        text: Recursos
+        url: https://giovanivaldrighi.github.io/morai_group/docs/
     design:
       spacing:
         padding: [0, 0, 0, 0]
         margin: [0, 0, 0, 0]
+      # For full-screen, add `min-h-screen` below
       css_class: ""
+      background:
+        color: ""
+        image:
+          # Add your image background to `assets/media/`.
+          filename: logo.svg
+          filters:
+            brightness: 0.5
+          size: cover
+          position: center
+          parallax: false
   - block: features
     id: features
     content:
@@ -44,5 +56,7 @@ sections:
         - name: Teoria do Aprendizado
           icon: star
           description: Generalização, convergência.
-        - name
+        - name: ...e muito mais.
+          icon: rectangle-group
+          description: 
 ---

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    version="1.1"
-   width="166"
-   height="72"
+   width="40"
+   height="24"
    id="svg10"
    sodipodi:docname="logo.svg"
    inkscape:version="1.4 (1:1.4+202410161351+e7c3feb100)"
@@ -41,29 +41,29 @@
     </clipPath>
   </defs>
   <path
-     style="display:inline;fill:#ffffff;fill-opacity:0;stroke:#ffffff;stroke-width:1.47633;stroke-dasharray:none;stroke-opacity:1"
-     d="m 1.7575485,35.5612 c 0,0 19.1718785,-19.484245 29.1273785,-16.816683 9.955463,2.667558 -15.465962,42.788364 -15.465962,42.788364 0,0 35.129363,-40.683986 36.780745,-30.025067 1.65138,10.658902 -13.211042,38.432087 -13.211042,38.432087"
+     style="display:inline;fill:#ffffff;fill-opacity:0;stroke:#ffffff;stroke-width:0.471605;stroke-dasharray:none;stroke-opacity:1"
+     d="m 0.56160878,11.35983 c 0,0 6.12435012,-6.2241336 9.30457942,-5.3719957 C 13.046405,6.8399709 4.9256725,19.65634 4.9256725,19.65634 c 0,0 11.2218795,-12.9962739 11.7494045,-9.591341 0.527524,3.404927 -4.220194,12.276917 -4.220194,12.276917"
      id="path10"
      sodipodi:nodetypes="cscsc" />
   <text
      xml:space="preserve"
-     style="font-size:27.1844px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
-     x="80.980865"
-     y="55.446198"
+     style="font-size:8.68391px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+     x="25.869078"
+     y="17.711983"
      id="text10"
      transform="scale(0.89022279,1.1233143)"><tspan
        sodipodi:role="line"
        id="tspan10"
-       x="80.980865"
-       y="55.446198"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.1844px;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman, ';fill:#ffffff;fill-opacity:1;stroke-width:0;stroke-dasharray:none">RAI</tspan></text>
+       x="25.869078"
+       y="17.711983"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.68391px;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman, ';fill:#ffffff;fill-opacity:1;stroke-width:0;stroke-dasharray:none">RAI</tspan></text>
   <g
      clip-path="url(#sOsVuOVmbhuw)"
      id="g10"
      inkscape:export-filename="g10.png"
      inkscape:export-xdpi="54.709999"
      inkscape:export-ydpi="54.709999"
-     transform="matrix(0.16403658,0,0,0.16403658,-35.623694,-15.93181)">
+     transform="matrix(0.05240058,0,0,0.05240058,-11.379622,-5.0893261)">
     <g
        id="g9">
       <path

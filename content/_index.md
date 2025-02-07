@@ -8,8 +8,13 @@ design:
   spacing: "6rem"
 
 sections:
-  - block: hero
+  - block: community/hero
     content:
+      logo:
+        filename: "logo.svg"
+        width: 50
+        height: 30
+        position: left
       title: MORAI
       text: Grupo de Estudos - Multi Objective Responsible Artificial Intelligence
       primary_action:
@@ -23,12 +28,10 @@ sections:
       spacing:
         padding: [0, 0, 0, 0]
         margin: [0, 0, 0, 0]
-      # For full-screen, add `min-h-screen` below
       css_class: ""
       background:
         color: ""
         image:
-          # Add your image background to `assets/media/`.
           filename: ""
           filters:
             brightness: 0.5

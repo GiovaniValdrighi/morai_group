@@ -2,9 +2,9 @@
 <svg
    version="1.1"
    width="166"
-   height="36"
+   height="72"
    id="svg10"
-   sodipodi:docname="icon.svg"
+   sodipodi:docname="logo.svg"
    inkscape:version="1.4 (1:1.4+202410161351+e7c3feb100)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -21,7 +21,7 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="7.001567"
-     inkscape:cx="42.204838"
+     inkscape:cx="68.698907"
      inkscape:cy="53.345201"
      inkscape:window-width="1854"
      inkscape:window-height="1123"
@@ -41,29 +41,29 @@
     </clipPath>
   </defs>
   <path
-     style="display:inline;fill:#ffffff;fill-opacity:0;stroke:#ffffff;stroke-width:0.738164;stroke-dasharray:none;stroke-opacity:1"
-     d="m 0.87877393,17.780599 c 0,0 9.58593907,-9.7421222 14.56368907,-8.4083412 4.977731,1.3337792 -7.7329811,21.3941812 -7.7329811,21.3941812 0,0 17.5646811,-20.341992 18.3903721,-15.012533 0.82569,5.329451 -6.605521,19.216043 -6.605521,19.216043"
+     style="display:inline;fill:#ffffff;fill-opacity:0;stroke:#ffffff;stroke-width:1.47633;stroke-dasharray:none;stroke-opacity:1"
+     d="m 1.7575485,35.5612 c 0,0 19.1718785,-19.484245 29.1273785,-16.816683 9.955463,2.667558 -15.465962,42.788364 -15.465962,42.788364 0,0 35.129363,-40.683986 36.780745,-30.025067 1.65138,10.658902 -13.211042,38.432087 -13.211042,38.432087"
      id="path10"
      sodipodi:nodetypes="cscsc" />
   <text
      xml:space="preserve"
-     style="font-size:13.5922px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
-     x="40.490433"
-     y="27.723097"
+     style="font-size:27.1844px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+     x="80.980865"
+     y="55.446198"
      id="text10"
      transform="scale(0.89022279,1.1233143)"><tspan
        sodipodi:role="line"
        id="tspan10"
-       x="40.490433"
-       y="27.723097"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.5922px;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman, ';fill:#ffffff;fill-opacity:1;stroke-width:0;stroke-dasharray:none">RAI</tspan></text>
+       x="80.980865"
+       y="55.446198"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.1844px;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman, ';fill:#ffffff;fill-opacity:1;stroke-width:0;stroke-dasharray:none">RAI</tspan></text>
   <g
      clip-path="url(#sOsVuOVmbhuw)"
      id="g10"
      inkscape:export-filename="g10.png"
      inkscape:export-xdpi="54.709999"
      inkscape:export-ydpi="54.709999"
-     transform="matrix(0.08201829,0,0,0.08201829,-17.811847,-7.9659053)">
+     transform="matrix(0.16403658,0,0,0.16403658,-35.623694,-15.93181)">
     <g
        id="g9">
       <path

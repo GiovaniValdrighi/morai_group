@@ -32,7 +32,7 @@ sections:
           filename: logo.svg
           filters:
             brightness: 0.5
-          size: cover
+          size: contain
           position: center
           parallax: false
   - block: features

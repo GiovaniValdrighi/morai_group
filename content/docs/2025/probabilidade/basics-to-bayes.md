@@ -3,16 +3,14 @@ title: Basics to Bayes
 weight: 1
 ---
 
-> Tudo aqui foi transformado para Markdown usando LLM. Podem existir erros.
+## Introdução
 
-# Introdução
-
-## Espaços Amostrais e Eventos
+### Espaços Amostrais e Eventos
 
 O espaço amostral $\Omega$ é o conjunto de possíveis resultados de um experimento. Os pontos $\omega$ em $\Omega$ são chamados de resultados amostrais, realizações ou elementos. Subconjuntos de $\Omega$ são chamados de eventos. 
 
 
-## Exemplo 1.3
+#### Exemplo 1.3
 
 Se lançarmos uma moeda para sempre, então o espaço amostral é o conjunto infinito:
 
@@ -27,12 +25,12 @@ E = \left\{ (\omega_1, \omega_2, \omega_3, \dots) : \omega_1 = T, \omega_2 = T, 
 $$
 
 
-## Exemplo prático 1
+#### Exemplo prático 1
 
 Suponha que lancemos uma moeda justa até obtermos exatamente duas caras. Descreva o espaço amostral $S$.
 
 
-## Conjuntos disjuntos
+### Conjuntos disjuntos
 
 Dizemos que $A_1, A_2, \dots $ são disjuntos ou mutuamente exclusivos se  
 
@@ -55,12 +53,12 @@ $$
 $$
 
 
-## Sequências Monótonas de Conjuntos
+### Sequências Monótonas de Conjuntos
 
 [Image of $ A_1 \subset A_2 \subset A_3 \subset \dots \subset A_n  $]
 
 
-## Sequências Monótonas de Conjuntos
+### Sequências Monótonas de Conjuntos
 
 Uma sequência de conjuntos $A_1, A_2, \dots $ é **monotonamente crescente** se $A_1 \subset A_2 \subset A_3 \subset \dots$ e definimos 
 
@@ -79,7 +77,7 @@ $$
 Em ambos os casos, escrevemos $A_n \to A$.
 
 
-## Sumário das terminologias básicas
+### Sumário das terminologias básicas
 
 | Símbolo        | Descrição                                     |
 |----------------|-------------------------------------------------|
@@ -95,47 +93,44 @@ Em ambos os casos, escrevemos $A_n \to A$.
 | $\Omega$      | evento certo (sempre verdadeiro (?))          |
 
 
-# Probabiblity Definidtion
+## Probabilidade
 
-## Possible Interpretations
-The books bring two different views of how to understand probability.
-- **Frequentist:** The probability of an event is, in a big number of experimentations, the proportion of times that an event is true across the repetition.([link](https://digitalfirst.bfwpub.com/stats_applet/stats_applet_10_prob.html))
+### Interpretações Possíveis
 
-## Possible Interpretations
-The books bring two different views of how to understand probability.
-- **Frequentist:** The probability of an event is, in a big number of experimentations, the proportion of times that an event is true across the repetition.([link](https://digitalfirst.bfwpub.com/stats_applet/stats_applet_10_prob.html))
-- **Bayesian:** The belief of an observer in a certain event to be true.
+O livro trás duas visões diferentes de como entender probabilidade.
+- **Frequentista:** A probabilidade de um evento é, em um grande número de experimentações, a proporção de vezes que um evento é verdadeiro ao longo da repetição. ([link](https://digitalfirst.bfwpub.com/stats_applet/stats_applet_10_prob.html))
+- **Bayesiana:** A crença de um observador em que um determinado evento é verdadeiro.
 
-## Definition of Probability
-**Definition.** A function $\mathbb{P}$ that assigns a real number $\mathbb{P}(A)$ to each event $A$ is a **probability distribution** or a **probability measure** if it satisfies the following three axioms:
+### Definição de Probabilidade
 
-- **Axiom 1:** $\mathbb{P}(A) \geq 0$ for every $A$
-- **Axiom 2:** $\mathbb{P}(\Omega) = 1$
-- **Axiom 3:** If $A_1, A_2, \dots$ are disjoint then
+**Definição.** Uma função $\mathbb{P}$ que atribui um número real $\mathbb{P}(A)$ para cada evento $A$ é uma **distribuição de probabilidade** ou uma **medida de probabilidade** se satisfaz os seguintes três axiomas:
+
+- **Axioma 1:** $\mathbb{P}(A) \geq 0$ para cada $A$
+- **Axioma 2:** $\mathbb{P}(\Omega) = 1$
+- **Axioma 3:** Se $A_1, A_2, \dots$ são disjuntos, então
     $$
     \mathbb{P} \left( \bigcup_{i=1}^{\infty} A_i \right) = \sum_{i=1}^{\infty} \mathbb{P}(A_i).
     $$
 
-## Definition of Probability
-This creates some interesting implications for us to be aware of:
+Isso cria algumas implicações interessantes das quais devemos estar cientes:
 - $\mathbb{P}(\emptyset) = 0$
 - $A \subset B \implies \mathbb{P}(A) \leq \mathbb{P}(B)$
 - $0 \leq \mathbb{P}(A) \leq 1$
 - $\mathbb{P}(A^c) = 1 - \mathbb{P}(A)$
 - $A \cap B = \emptyset \implies \mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B). \quad $
 
-## Probability - Union of Events
-**Lemma.** *For any events \( A \) and \( B \),*
+### União de Eventos
+**Lema.** *Para cada evento $A$ e $B$,*
 
 $$
 \mathbb{P} \left( A \cup B \right) = \mathbb{P}(A) + \mathbb{P}(B) - \mathbb{P}(AB).
 $$
 
 
-*Obs: See proof in pg 6
+*Obs: Veja a prova na página 6.
 
-## Probability - Continuity of Probabilities
-**Theorem (Continuity of Probabilities).**
+### Continuidade de Probabilidades
+**Teorema (Continuidade de Probabilidades).**
 If $A_n \to A$ then
 $$
 P(A_n) \to P(A) \quad \text{as } n \to \infty.
@@ -144,7 +139,6 @@ $$
 
 ## Eventos Independentes
 
-### Independência de Eventos
 **Definição**: Dois eventos \( A \) e \( B \) são independentes se
 $$
 P(A B) = P(A) P(B) = P(A) \cdot P(B)
@@ -171,13 +165,12 @@ A \cap B = \{2, 4\}
 $$
 Estes são os números que são simultaneamente pares e menores ou iguais a 4.
 
-### Probabilidade de \( A \cap B \)
+## Probabilidade de \( A \cap B \)
 A probabilidade de \( A \cap B \) é dada pelo número de resultados favoráveis (que são 2: \( 2 \) e \( 4 \)) dividido pelo número total de resultados possíveis (6, pois o dado tem 6 faces):
 $$
 P(A \cap B) = \frac{2}{6} = \frac{1}{3}
 $$
 
-### Probabilidades Individuais
 Agora, calculamos as probabilidades individuais:
 * A probabilidade de \( A \) (resultados pares) é:
 $$
@@ -199,14 +192,12 @@ P(A \cap B) = \frac{1}{3}, \quad P(A) \times P(B) = \frac{1}{2} \times \frac{2}{
 $$
 Como \( P(A \cap B) = P(A) \times P(B) \), concluímos que os eventos \( A \) e \( B \) são independentes.
 
-### Conclusão
 ``Neste caso, não assumimos que \( A \) e \( B \) são independentes — apenas descobrimos que eram'' significa que, ao calcular as probabilidades e verificar a condição de independência, chegamos à conclusão de que \( A \) e \( B \) são eventos independentes, sem fazer essa suposição previamente.
 
 ### Eventos Disjuntos e Independência
 Suponha que \( A \) e \( B \) sejam eventos disjuntos, cada um com probabilidade positiva.
 Podemos nos perguntar: eles podem ser independentes?
 
-### Independência de Eventos Disjuntos
 A resposta é não. Isso ocorre porque a probabilidade da interseção de \( A \) e \( B \) é zero:
 $$
 P(A \cap B) = P(\emptyset) = 0
@@ -248,10 +239,9 @@ $$P(A|B) = \frac{P(A \cap B)}{P(B)}$$
 
 Pense em $P(A|B)$ como a fração de vezes em que $A$ ocorre entre aquelas em que $B$ ocorre.
 
-## Propriedades da Probabilidade Condicional
 Para qualquer $B$ fixo tal que $P(B) > 0$, $P(\cdot | B)$ é uma probabilidade, ou seja, ela satisfaz os três axiomas da probabilidade.
 
-## Álgebra $\sigma$ e Espaço de Probabilidade
+### Álgebra $\sigma$ e Espaço de Probabilidade
 Geralmente, não é viável atribuir probabilidades a todos os subconjuntos de um espaço amostral $\Omega$. Em vez disso, restringe-se a atenção a um conjunto de eventos chamado álgebra $\sigma$ ou $\sigma$-álgebra, que é uma classe $A$ que satisfaz as seguintes propriedades:
 
 * $\emptyset \in A$, ou seja, o conjunto vazio está em $A$.
@@ -262,20 +252,19 @@ Os conjuntos em $A$ são chamados de conjuntos mensuráveis.
 
 Chamamos o par $(\Omega, A)$ de espaço mensurável. Se $P$ for uma medida de probabilidade definida sobre $A$, então o triplo $(\Omega, A, P)$ é chamado de espaço de probabilidade.
 
-## Axiomas da Probabilidade Condicional
+### Axiomas da Probabilidade Condicional
 Em particular, temos as seguintes propriedades:
 * $P(A|B) \geq 0$, ou seja, a probabilidade condicional é sempre não negativa.
 * $P(\Omega|B) = 1$, ou seja, a probabilidade condicional do espaço amostral $\Omega$, dado $B$, é 1.
 * Se $A_1, A_2, \dots$ são eventos disjuntos, então:
 $$P\left( \bigcup_{i=1}^{\infty} A_i \Big| B \right) = \sum_{i=1}^{\infty} P(A_i | B).$$
 
-## Limitações da Probabilidade Condicional
 No entanto, em geral, não é verdade que:
 $$P(A|B \cup C) = P(A|B) + P(A|C).$$
 As regras da probabilidade aplicam-se apenas aos eventos à esquerda da barra $|$.
 $$P(A|B) \neq P(B|A)$$
 
-## Exemplo de Probabilidade Condicional
+#### Exemplo de Probabilidade Condicional
 Um teste médico para a doença $D$ tem os resultados $+$ e $-$. As probabilidades são as seguintes:
 
 |   | D     | D^c   |
@@ -283,24 +272,21 @@ Um teste médico para a doença $D$ tem os resultados $+$ e $-$. As probabilidad
 | + | 0.009 | 0.099 |
 | - | 0.001 | 0.891 |
 
-## Cálculo de Probabilidades Condicionais
+#### Cálculo de Probabilidades Condicionais
 Da definição de probabilidade condicional, temos:
 $$P(+|D) = \frac{P(+ \cap D)}{P(D)} = \frac{0.009}{0.009 + 0.001} = 0.9$$
 e
 $$P(-|D^c) = \frac{P(- \cap D^c)}{P(D^c)} = \frac{0.891}{0.891 + 0.099} \approx 0.9.$$
 Aparentemente, o teste é bastante preciso: pessoas doentes resultam positivo 90\% das vezes e pessoas saudáveis resultam negativo cerca de 90\% das vezes.
 
-## Probabilidade de Ter a Doença    Após um Resultado Positivo
 Suponha que você faça o teste e o resultado seja positivo. Qual é a probabilidade de você ter a doença?
 
-## Probabilidade de Ter a Doença Após um Resultado Positivo
 A maioria das pessoas responderia 0.90. No entanto, a resposta correta é:
 $$P(D|+) = \frac{P(+ \cap D)}{P(+)} = \frac{0.009}{0.009 + 0.099} \approx 0.08.$$
 A lição aqui é que é necessário calcular a resposta numericamente. Não confie apenas na sua intuição.
 
-# Baye's Theorem
+## Baye's Theorem
 
-## The Law of Total Probability
 ### The Law of Total Probability
 
 **Theorem (The Law of Total Probability).**
@@ -311,9 +297,6 @@ P(B) = \sum_{i=1}^k P(B|A_i)P(A_i).
 $$
 *Obs: See proof in pg 12
 
-## Baye's Theorem
-### Baye's Theorem
-
 **Theorem (Bayes' Theorem).**
 Let $A\_1, \dots, A\_k$ be a partition of $\Omega$ such that $P(A\_i) > 0$ for each $i$
 If $P(B) > 0$ then, for each$i = 1, \dots, k$,
@@ -323,14 +306,12 @@ $$
 
 Let's make the deduction using the Conditional Probability and the Law of Total Probability
 
-## Example
 ### Example
 Steve is very shy and withdrawn, invariably helpful but with very little interest in people or in the world of reality. A meek and tidy soul, he has a need for order and structure, and a passion for detail.  
 **What is the likelihood of Steve being a librarian vs a farmer?**
 
 *Obs: See more examples in page 12, credit in this one for 3blue1brown
 
-## Exercise
 ### Exercise
 Suppose that 30 percent of computer owners use a Macintosh, 50 percent
 use Windows, and 20 percent use Linux. Suppose that 65 percent of

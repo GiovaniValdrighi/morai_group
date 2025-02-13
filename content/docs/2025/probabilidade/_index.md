@@ -2,4 +2,4 @@
 title: Probabilidade
 ---
 
-Imagina que existe um negócio chamado sigma álgebra $\Sigma$, e existe uma régua $p$ que mede o tamanho de pequenos pedacinhos de $\Sigma$.
+Material das apresentações sobre probabilidade desenvolvido baseado no livro [All of Statistics](https://egrcc.github.io/docs/math/all-of-statistics.pdf).
